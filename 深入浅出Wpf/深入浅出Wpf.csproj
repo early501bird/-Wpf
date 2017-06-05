@@ -37,6 +37,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -72,7 +73,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="4\XArrayWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="4\xKeyValue.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="4\xStaticWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="5\DockPanelWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="5\ItemControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -90,13 +107,27 @@
     <Compile Include="4\MyButtonTypeWindow.xaml.cs">
       <DependentUpon>MyButtonTypeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="4\XArrayWindow.xaml.cs">
+      <DependentUpon>XArrayWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="4\xKeyValue.xaml.cs">
       <DependentUpon>xKeyValue.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="4\xStaticWindow.xaml.cs">
+      <DependentUpon>xStaticWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="5\DockPanelWindow.xaml.cs">
+      <DependentUpon>DockPanelWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="5\Employee.cs" />
+    <Compile Include="5\ItemControl.xaml.cs">
+      <DependentUpon>ItemControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="binding\Student.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
