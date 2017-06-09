@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.ObjectModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Wpf;
+using Wpf.binding;
 using Wpf._4;
 
 namespace UnitTestProject1
@@ -11,6 +13,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod1()
         {
+            ObservableCollection<StudentEntity> studentCollection = StudentsCollection.GetStudents();
         }
     }
 }
