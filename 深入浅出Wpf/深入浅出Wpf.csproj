@@ -93,11 +93,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="binding\BindingConverter\BindingConverterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="binding\ItemSourceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="binding\MultiBind\MultiBindingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="binding\ObjectDataProviderWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="binding\RelativeSourceWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="binding\SliderBindingValidation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="binding\TableItemSourceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="binding\XmlItemSourceTreeWindow1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -139,13 +163,35 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="binding\BindingConverter\BindingConverterWindow.xaml.cs">
+      <DependentUpon>BindingConverterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="binding\BindingConverter\DataConverters.cs" />
+    <Compile Include="binding\BindingConverter\Plane.cs" />
+    <Compile Include="binding\Caculator.cs" />
     <Compile Include="binding\ItemSourceWindow.xaml.cs">
       <DependentUpon>ItemSourceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="binding\MultiBind\LogonMultiBindingConverter.cs" />
+    <Compile Include="binding\MultiBind\MultiBindingWindow.xaml.cs">
+      <DependentUpon>MultiBindingWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="binding\ObjectDataProviderWindow1.xaml.cs">
+      <DependentUpon>ObjectDataProviderWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="binding\RelativeSourceWindow1.xaml.cs">
+      <DependentUpon>RelativeSourceWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="binding\SliderBindingValidation.xaml.cs">
+      <DependentUpon>SliderBindingValidation.xaml</DependentUpon>
     </Compile>
     <Compile Include="binding\Student.cs" />
     <Compile Include="binding\StudentEntity.cs" />
     <Compile Include="binding\TableItemSourceWindow.xaml.cs">
       <DependentUpon>TableItemSourceWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="binding\XmlItemSourceTreeWindow1.xaml.cs">
+      <DependentUpon>XmlItemSourceTreeWindow1.xaml</DependentUpon>
     </Compile>
     <Compile Include="binding\XmlItemSourceWindow.xaml.cs">
       <DependentUpon>XmlItemSourceWindow.xaml</DependentUpon>
