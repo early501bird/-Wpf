@@ -57,6 +57,29 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="10Resource\DynamicWindow1.xaml.cs">
+      <DependentUpon>DynamicWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="10Resource\PropertiesResourcesWindow.xaml.cs">
+      <DependentUpon>PropertiesResourcesWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="8Route\AddEvent\AttachedStudent.cs" />
+    <Compile Include="8Route\AddEvent\AttachStudentWindow.xaml.cs">
+      <DependentUpon>AttachStudentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="8Route\ReportTime\ReportTimeEventArgs.cs" />
+    <Compile Include="8Route\ReportTime\TimeButton.cs" />
+    <Compile Include="8Route\RouteWindow.xaml.cs">
+      <DependentUpon>RouteWindow.xaml</DependentUpon>
+    </Compile>
+    <Page Include="10Resource\DynamicWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="10Resource\PropertiesResourcesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="4\EllipseRadialGradient.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -93,39 +116,63 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="binding\BindingConverter\BindingConverterWindow.xaml">
+    <Page Include="6binding\BindingConverter\BindingConverterWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="binding\ItemSourceWindow.xaml">
+    <Page Include="6binding\ItemSourceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="binding\MultiBind\MultiBindingWindow.xaml">
+    <Page Include="6binding\MultiBind\MultiBindingWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="binding\ObjectDataProviderWindow1.xaml">
+    <Page Include="6binding\ObjectDataProviderWindow1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="binding\RelativeSourceWindow1.xaml">
+    <Page Include="6binding\RelativeSourceWindow1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="binding\SliderBindingValidation.xaml">
+    <Page Include="6binding\SliderBindingValidation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="binding\TableItemSourceWindow.xaml">
+    <Page Include="6binding\TableItemSourceWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="binding\XmlItemSourceTreeWindow1.xaml">
+    <Page Include="6binding\XmlItemSourceTreeWindow1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="binding\XmlItemSourceWindow.xaml">
+    <Page Include="6binding\XmlItemSourceWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="7DepandencyProperty\AttachProperties\AttachPropertyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="7DepandencyProperty\DependencyPropertyStudentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="9Commond\Command.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="9Commond\CommandPrameter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="9Commond\MyClearCommond\MiniView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="9Commond\MyClearCommond\Window1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -159,47 +206,79 @@
     <Compile Include="5\ItemControl.xaml.cs">
       <DependentUpon>ItemControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="9Commond\Command.xaml.cs">
+      <DependentUpon>Command.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="9Commond\CommandPrameter.xaml.cs">
+      <DependentUpon>CommandPrameter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="9Commond\MyClearCommond\ClearCommand.cs" />
+    <Compile Include="9Commond\MyClearCommond\IView.cs" />
+    <Compile Include="9Commond\MyClearCommond\MiniView.xaml.cs">
+      <DependentUpon>MiniView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="9Commond\MyClearCommond\MyCommandSource.cs" />
+    <Compile Include="9Commond\MyClearCommond\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="binding\BindingConverter\BindingConverterWindow.xaml.cs">
+    <Compile Include="6binding\BindingConverter\BindingConverterWindow.xaml.cs">
       <DependentUpon>BindingConverterWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="binding\BindingConverter\DataConverters.cs" />
-    <Compile Include="binding\BindingConverter\Plane.cs" />
-    <Compile Include="binding\Caculator.cs" />
-    <Compile Include="binding\ItemSourceWindow.xaml.cs">
+    <Compile Include="6binding\BindingConverter\DataConverters.cs" />
+    <Compile Include="6binding\BindingConverter\Plane.cs" />
+    <Compile Include="6binding\Caculator.cs" />
+    <Compile Include="6binding\ItemSourceWindow.xaml.cs">
       <DependentUpon>ItemSourceWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="binding\MultiBind\LogonMultiBindingConverter.cs" />
-    <Compile Include="binding\MultiBind\MultiBindingWindow.xaml.cs">
+    <Compile Include="6binding\MultiBind\LogonMultiBindingConverter.cs" />
+    <Compile Include="6binding\MultiBind\MultiBindingWindow.xaml.cs">
       <DependentUpon>MultiBindingWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="binding\ObjectDataProviderWindow1.xaml.cs">
+    <Compile Include="6binding\ObjectDataProviderWindow1.xaml.cs">
       <DependentUpon>ObjectDataProviderWindow1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="binding\RelativeSourceWindow1.xaml.cs">
+    <Compile Include="6binding\RelativeSourceWindow1.xaml.cs">
       <DependentUpon>RelativeSourceWindow1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="binding\SliderBindingValidation.xaml.cs">
+    <Compile Include="6binding\SliderBindingValidation.xaml.cs">
       <DependentUpon>SliderBindingValidation.xaml</DependentUpon>
     </Compile>
-    <Compile Include="binding\Student.cs" />
-    <Compile Include="binding\StudentEntity.cs" />
-    <Compile Include="binding\TableItemSourceWindow.xaml.cs">
+    <Compile Include="6binding\Student.cs" />
+    <Compile Include="6binding\StudentEntity.cs" />
+    <Compile Include="6binding\TableItemSourceWindow.xaml.cs">
       <DependentUpon>TableItemSourceWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="binding\XmlItemSourceTreeWindow1.xaml.cs">
+    <Compile Include="6binding\XmlItemSourceTreeWindow1.xaml.cs">
       <DependentUpon>XmlItemSourceTreeWindow1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="binding\XmlItemSourceWindow.xaml.cs">
+    <Compile Include="6binding\XmlItemSourceWindow.xaml.cs">
       <DependentUpon>XmlItemSourceWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="7DepandencyProperty\AttachProperties\AttachPropertyWindow.xaml.cs">
+      <DependentUpon>AttachPropertyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="7DepandencyProperty\AttachProperties\School.cs" />
+    <Compile Include="7DepandencyProperty\DependencyPropertyStudentWindow.xaml.cs">
+      <DependentUpon>DependencyPropertyStudentWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="7DepandencyProperty\AttachProperties\Human.cs" />
+    <Compile Include="7DepandencyProperty\StudentDepandency.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="8Route\AddEvent\AttachStudentWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="8Route\RouteWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -216,7 +295,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -229,10 +308,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="binding\StudentList.xml">
+    <Resource Include="6binding\StudentList.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
