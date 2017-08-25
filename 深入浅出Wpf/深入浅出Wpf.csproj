@@ -63,6 +63,39 @@
     <Compile Include="10Resource\PropertiesResourcesWindow.xaml.cs">
       <DependentUpon>PropertiesResourcesWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="11Template\2DataTemplate\Car.cs" />
+    <Compile Include="11Template\2DataTemplate\CarLIstItemView.xaml.cs">
+      <DependentUpon>CarLIstItemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="11Template\2DataTemplate\NameToPhotoPathConverter.cs" />
+    <Compile Include="11Template\2DataTemplate\CarDetailView.xaml.cs">
+      <DependentUpon>CarDetailView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="11Template\2DataTemplate\DataConverterWindow2.xaml.cs">
+      <DependentUpon>DataConverterWindow2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="11Template\2DataTemplate\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="11Template\StyleSetter\DataTriggerWindow.xaml.cs">
+      <DependentUpon>DataTriggerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="11Template\ItemTemplateWindow.xaml.cs">
+      <DependentUpon>ItemTemplateWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="11Template\StyleSetter\L2BConverter.cs" />
+    <Compile Include="11Template\StyleSetter\MutiDataTriggerWindow1.xaml.cs">
+      <DependentUpon>MutiDataTriggerWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="11Template\StyleSetter\StyleSetterWindow.xaml.cs">
+      <DependentUpon>StyleSetterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="11Template\XmlDataTemplate\OperationXmlDatatemplateWindow1.xaml.cs">
+      <DependentUpon>OperationXmlDatatemplateWindow1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="11Template\XmlDataTemplate\XmlDatatemplateWindow1.xaml.cs">
+      <DependentUpon>XmlDatatemplateWindow1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="8Route\AddEvent\AttachedStudent.cs" />
     <Compile Include="8Route\AddEvent\AttachStudentWindow.xaml.cs">
       <DependentUpon>AttachStudentWindow.xaml</DependentUpon>
@@ -72,11 +105,55 @@
     <Compile Include="8Route\RouteWindow.xaml.cs">
       <DependentUpon>RouteWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="11Template\DataTemplateWindow.xaml.cs">
+      <DependentUpon>DataTemplateWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Unit.cs" />
     <Page Include="10Resource\DynamicWindow1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="10Resource\PropertiesResourcesWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="11Template\2DataTemplate\CarLIstItemView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="11Template\2DataTemplate\CarDetailView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="11Template\2DataTemplate\DataConverterWindow2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="11Template\2DataTemplate\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="11Template\StyleSetter\DataTriggerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="11Template\ItemTemplateWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="11Template\StyleSetter\MutiDataTriggerWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="11Template\StyleSetter\StyleSetterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="11Template\XmlDataTemplate\OperationXmlDatatemplateWindow1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="11Template\XmlDataTemplate\XmlDatatemplateWindow1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -173,6 +250,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="9Commond\MyClearCommond\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="11Template\DataTemplateWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -311,6 +392,12 @@
     <Resource Include="6binding\StudentList.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="11Template\XmlDataTemplate\Data.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="11Template\XmlDataTemplate\OperationData.xml" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
