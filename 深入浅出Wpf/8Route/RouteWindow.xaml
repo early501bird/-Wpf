@@ -1,0 +1,23 @@
+﻿<Window x:Class="Wpf.Route.RouteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf.Route"
+        mc:Ignorable="d"
+        Title="RouteWindow" Height="200" Width="200">
+    <Grid Name="GridRoot" Background="Lime" >
+        <Grid Name="GridA" Margin="10" Background="Blue"  Button.Click="ButtonClicked">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Canvas Name="CanvasLeft" Grid.Column="0" Background="Red" Margin="10">
+                <Button Name="ButtonLeft" Content="Left" Width="40" Height="100" Margin="10"/>
+            </Canvas>
+            <Canvas Name="CanvasRight" Grid.Column="1" Background="Yellow" Margin="10">
+                <Button Name="ButtonRight" Content="right" Width="40" Height="100" Margin="10"></Button>
+            </Canvas>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="Wpf._5.DockPanelWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf._5"
+        mc:Ignorable="d"
+        Title="DockPanelWindow" Height="300" Width="400">
+    <Grid>
+        <!--<DockPanel>
+            <TextBox DockPanel.Dock="Top" Height="25" BorderBrush="Black"/>
+            <TextBox DockPanel.Dock="Left" Width="150" BorderBrush="Black"/>
+            <TextBox BorderBrush="Black"/>
+        </DockPanel>-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.ColumnSpan="3" BorderBrush="Black"/>
+        <TextBox Grid.Row="1" BorderBrush="Black"/>
+        <GridSplitter Grid.Row="1" Grid.Column="1"
+                      VerticalAlignment="Stretch"
+                      HorizontalAlignment="Center"
+                      Width="5"
+                      Background="Gray"
+                      ShowsPreview="True"/>
+        <TextBox Grid.Row="1" Grid.Column="2" BorderBrush="Black"></TextBox>
+    </Grid>
+</Window>

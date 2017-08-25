@@ -5,8 +5,9 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using Wpf._4;
 
-namespace 深入浅出Wpf
+namespace Wpf
 {
     /// <summary>
     /// App.xaml 的交互逻辑
